@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- - - - - - - - - HEAD - - - - - - - - -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Dicoding</title>
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+
+<!-- - - - - - - - - BODY - - - - - - - - -->
+
+<body>
+
+<!-- - - - - - - - - HEADER - - - - - - - - -->
+
+    <header>
+
+        <div id="banner">
+    
+            <h1 id="Greet"></h1>
+            <p>I'm <span id="red">Noriza.</span></p>
+    
+        </div>
+
+        <nav>
+    
+            <ul>
+                <li><a href="#socials">Socials</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+    
+        </nav>
+    
+    </header>
+
+<!-- - - - - - - - - MAIN - - - - - - - - -->
+
+    <main>
+
+        <div id="content">
+
+<!-- - - - - - - - - ARTICLE: WHAT I DO - - - - - - - - -->
+
+            <article id="activity" class="card">
+               
+                <h2>What I do</h2>
+
+                <ul id="blob">
+                    <li>Character Design</li>
+                    <li>User Interface</li>
+                    <li>Graphics</li>
+                    <li>Web</li>
+                    <li>Videography</li>
+                </ul>
+
+                <br><hr>
+            
+            </article>
+
+<!-- - - - - - - - - ARTICLE: PROJECTS - - - - - - - - -->
+
+            <article id="projects" class="card">
+                
+                <h2>Projects</h2>
+
+                <ul id="blob">
+                    <li>UI Design</li>
+                    <li>Web</li>
+                </ul>
+
+                <div id="proj-prev">
+                    <img src="assets/images/image1.png" alt="">
+                    <img src="assets/images/image2.jpg" alt="">
+                    <img src="assets/images/image3.jpg" alt="">
+                </div>
+
+                <br><hr>
+
+            </article>
+        
+<!-- - - - - - - - - ARTICLE: ON THE WEB - - - - - - - - -->
+
+            <article id="socials" class="card">
+
+                <h2>On the web</h2>
+
+                <ul id="blob">
+                    <li><a href="https://www.instagram.com/heynoriza/">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/syiffanoriza/">LinkedIn</a></li>
+                    <li><a href="https://www.behance.net/noriza">Behance</a></li>
+                    <li><a href="https://github.com/syiffanoriza">Github</a></li>
+                </ul>
+
+                <br><hr>
+
+            </article>
+
+        </div>
+
+<!-- - - - - - - - - ASIDE - - - - - - - - -->
+
+        <aside>
+
+            <article id="bio" class="card">
+    
+                <header>
+                    <figure>
+                        <img src="assets/images/me.png" alt="Noriza" id="person">
+                    </figure>
+
+                    <h3>Syiffa Noriza Nafasyah</h3>
+                </header>
+
+                <p>A Software Engineer major hailing from the city of Tangerang</p>
+    
+            </article>
+        
+        </aside>
+
+    </main>
+
+    <footer>
+
+        <p>Property of <span id="red">Syiffa Noriza Nafasyah</span>, February 2023</p>
+    
+    </footer>
+
+</body>
+
+<!-- - - - - - - - - JS SCRIPT - - - - - - - - -->
+
+<script>
+    let text = ["Hello,", "Halo,", "Hola,", "Hej,", "Bonjour,", "Ciao,", "Nǐ hǎo,", "Ahlan,"];
+    let counter = 0;
+    let element = document.getElementById("Greet");
+    let int = setInterval(change, 1000);
+
+    function change() {
+        element.innerHTML = text[counter];
+        counter++;
+        if (counter >= text.length) {
+            counter = 0;
+        }
+    }
+    
+</script>
+</html>
